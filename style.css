@@ -10,6 +10,7 @@
 
 body {
     color: rgba(30, 61, 109, 0.801);
+    height: 100vh;
 }
 
 .left {
@@ -90,7 +91,7 @@ body {
     background-color: rgb(6, 47, 58);
     color: white;
     display: flex;
-    padding: 30px;
+    padding: 30px 30px 100px 30px;
     justify-content: center;
     align-items: center;
 }
