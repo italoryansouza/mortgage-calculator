@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/icon-calculator.svg" type="image/x-icon">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <h1>Calculadora de Juros</h1>
+            <button id="clear">Clear All</button>
+
+            <div class="form">
+                <label for="montante">Capitao Inicial</label>
+
+                <div class="ipcontainer" id="campomont">
+                    <div class="left-d">R$</div>
+                    <input type="number" name="montante" id="montante" required><br>
+                </div>
+
+                <label for="time">Tempo de Permanência</label>
+
+                <div class="ipcontainer" id="campotime"><input type="number" name="time" id="time" required><div class="right-d">anos</div></div>
+
+                <label for="taxa">Taxa</label>
+
+                <div class="ipcontainer" id="campotaxa"><input type="number" name="taxa" id="taxa" required><div class="right-d">%</div></div>
+            </div>
+
+            <div id="buttoncal"><button id="calcular"><img src="assets/img/icon-calculator.svg" alt=""><p>Calcular Valor</p></button></div>
+        </div>
+
+        <div class="right">
+            <div class="nocomplete">
+                <img src="assets/img/illustration-empty.svg" alt="illustration-empty">
+                <h2>Os resultados serão mostrados aqui:</h2>
+                <p>Para que os resultados sejam mostrados, digite as informações nos campos acima e clique em "Calcular Valor".</p>
+            </div>
+
+            <div class="complete">
+                <h2>Seus Resultados</h2>
+                <p>Os resultados expressos abaixo são baseados nas informações fornecidas. Para ajustar os resutlados, edite o formulário e clique em "Calcular Valor"</p>
+
+                <div class="resultado">
+                    <h3>Montante Final</h3>
+                    <div id="valormontante"></div>
+                    <hr>
+                    <h3>Valor de Juros</h3>
+                    <div id="valorjuros"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
